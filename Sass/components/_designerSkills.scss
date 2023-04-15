@@ -1,0 +1,45 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* designSKills part*/
+#design_skills{
+    padding:50px 0;
+    .skills{
+        margin:20% 0;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+        p{
+            @include paragraph;
+        }
+        .mainskills{
+            margin:50px 0;
+            h6{
+                margin-bottom: 10px;
+                @include h6;
+            }
+            .cmntali{
+                display: block;
+                width: 90%;
+                height:10px;
+                background:$green;
+                border-radius:5px;
+                margin:20px 0;
+                overflow: hidden;
+                span{
+                    display: block;
+                    width: 70%;
+                    height:100%;
+                    background:$para;
+                }
+            }
+        }
+    }
+    .skillerimg{
+        img{
+
+        }
+    }
+}

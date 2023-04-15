@@ -1,0 +1,84 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* servicespart*/
+#services{
+    padding:100px 0;
+    position: relative;
+    .rainbow{
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    .axix{
+        width: 400px;
+        position: absolute;
+        right: 0;
+        top: -3%;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    .services_heading{
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+        p{
+            @include paragraph;
+        }
+    }
+    .service_item{
+        display: flex;
+        width: 100%;
+        background:$bodylight;
+        padding:40px;
+        border-radius:10px;
+        margin-bottom: 20px;
+        .servimg{
+            display: inline-block;
+            width: 100px;
+            height:100px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            i{
+                font-size:50px;
+                color:$nav;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform:translate(-50%,-55%)
+            }
+        }
+        .servdesign{
+            width: 80%;
+            display: inline-block;
+            margin-left: 30px;
+            h3{
+                @include h3;
+                color:$white;
+                margin-bottom: 30px;
+            }
+            h6{
+                @include h6;
+                margin-bottom: 20px;
+                span{
+                    color:$deepRed;
+                    margin-left: 10px;
+                }
+            }
+            p{
+                @include paragraph;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*tools part*/
+#tools{
+    .progress_value{
+        height:100px;
+        width: 2px;
+        position: fixed;
+        right: 2%;
+        bottom: 5%;
+        cursor: pointer;
+    }
+    // custom cursor style
+    .cursor{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
+        margin-top: -15px;
+        border-radius: 50%;
+        border: 2px solid $deepRed;
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+        pointer-events: none;
+        z-index: 1000;
+    }
+    .grow{
+        transform: scale(3);
+        background: green;
+        mix-blend-mode: difference; 
+        border: none;
+    }
+    .grow-small{
+        transform: scale(2);
+        background: green;
+        mix-blend-mode: difference; 
+        border: none;
+    }
+}

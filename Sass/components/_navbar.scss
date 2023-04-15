@@ -1,0 +1,39 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* navbar part*/
+#navbar{
+    width: 100%;
+    padding: 15px 0;
+    background: $nav;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    .navbar{
+        background:none !important;
+        .meCollapse{
+            .meUl{
+                display:flex;
+                align-items: center;
+                gap:35px;
+                .liItem{
+                    a.meA{
+                        color:$white !important;
+                        margin: 0;
+                        padding:0;
+                        &:hover{
+                            color:$deepRed !important;
+                        }
+                    }
+                }
+                .meLi{
+                    @include cmmnBtn;
+                    .meb{
+                        margin-left: 0 !important;
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}

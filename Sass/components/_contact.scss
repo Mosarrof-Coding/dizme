@@ -1,0 +1,114 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* contact part*/
+#contact{
+    width: 100%;
+    padding:50px 0;
+    position: relative;
+    .absolute23{
+        position: absolute;
+        left: 0;
+        top: 5%;
+        display: block;
+        width: 150px;
+        img{
+            width:100%;
+        }
+    }
+    .contact_heading{
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+        h4{
+            @include h4;
+        }
+        h2{
+            @include h2;
+        }
+        p{
+            @include paragraph;
+        }
+    }
+    .via{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .contact_icon{
+            display: inline-block;
+            width: 80px;
+            height:80px;
+            border-radius:50%;
+            background:pink;
+            display:grid;
+            place-items:center;
+            margin-right:15px;
+            margin-bottom: 15px;
+            i{
+                font-size:20px;
+            }
+        }
+        .address{
+            .pixel32{
+                color:$white !important;
+                font-size:32px !important;
+                @include h3;
+            }
+            a{
+                color:$para;
+                font-size:16px;
+            }
+        }
+    }
+    form{
+        width: 100%;
+        display: block;
+        label{
+            display: none;
+        }
+        .inpu_connect{
+            width: 100%;
+            display: block;
+            .contactInput{
+                border-radius:5px;
+                display: block;
+                width: 100%;
+                padding:15px;
+                color:$white;
+                margin-top: 0;
+                text-transform:capitalize;
+                border:1px solid $border;
+                background:none;
+                ::placeholder{
+                    color:$para;
+                }
+            }
+        }
+        textarea{
+            border-radius:5px;
+            width: 100%;
+            padding:15px;
+            color:$white;
+            text-transform: capitalize;
+            border:1px solid $border;
+            background:none;
+            ::placeholder{
+                color:$para;
+            }
+        }
+        .fvalid{
+            margin:20px 0;
+            background:none;
+            text-transform: capitalize;
+            @include cmnBtn1;
+        }
+    }
+    .map{
+        border-radius:20px;
+        overflow: hidden;
+        margin:100px 0;
+        iframe{
+            display: block;
+            width: 100%;
+        }
+    }
+}

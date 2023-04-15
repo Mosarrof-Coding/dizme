@@ -1,0 +1,23 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* footer part*/
+footer{
+    width: 100%;
+    background:$bodylight;
+    padding:45px 0;
+    .copy{
+        .copyp{
+            margin-bottom: 0;
+            @include paragraph;
+
+        }
+    }
+    .end{
+        display: block;
+        text-align: right;
+        span{
+            @include paragraph;
+            margin-left: 20px;
+        }
+    }
+}
