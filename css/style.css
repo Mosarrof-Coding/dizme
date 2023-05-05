@@ -42,10 +42,6 @@ body {
   width: 100%;
   padding: 15px 0;
   background: #2b2d33;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
 }
 #navbar .navbar {
   background: none !important;
@@ -134,6 +130,7 @@ body {
   color: #fff;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
+  display: inline-block;
 }
 #banner .diz_heading p {
   color: #fff;
