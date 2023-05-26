@@ -34,29 +34,39 @@
         p{
             @include paragraph;
         }
+        margin-bottom: 50px;
+    }
+    a.grow{
+        display: block;
+        background: transparent;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 20px;
     }
     .service_item{
         display: flex;
         width: 100%;
         background:$bodylight;
         padding:40px;
-        border-radius:10px;
-        margin-bottom: 20px;
         .servimg{
-            display: inline-block;
-            width: 100px;
-            height:100px;
+            width: 20%;
+            height:20%;
             position: relative;
+            // padding: 10px;
             img{
-                width: 100%;
+                width: 90%;
+                height: 90%;
+                display: block;
+                margin: 0 auto;
             }
             i{
                 font-size:50px;
-                color:$nav;
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform:translate(-50%,-55%)
+                transform:translate(-50%,-55%);
+                mix-blend-mode: exclusion;
+                color:$deepRed;
             }
         }
         .servdesign{

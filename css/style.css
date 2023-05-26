@@ -688,6 +688,9 @@ body {
 #services .axix img {
   width: 100%;
 }
+#services .services_heading {
+  margin-bottom: 50px;
+}
 #services .services_heading h4 {
   display: inline-block;
   color: #f75023;
@@ -714,30 +717,38 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #b9b5c9;
 }
+#services a.grow {
+  display: block;
+  background: transparent;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 #services .service_item {
   display: flex;
   width: 100%;
   background: #4b4f5c;
   padding: 40px;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 #services .service_item .servimg {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   position: relative;
 }
 #services .service_item .servimg img {
-  width: 100%;
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: 0 auto;
 }
 #services .service_item .servimg i {
   font-size: 50px;
-  color: #2b2d33;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -55%);
+  mix-blend-mode: exclusion;
+  color: #f75023;
 }
 #services .service_item .servdesign {
   width: 80%;
