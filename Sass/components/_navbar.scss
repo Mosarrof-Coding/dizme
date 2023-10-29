@@ -1,35 +1,49 @@
 @import "../variables/variable";
 @import "../mixins/mixin";
 /* navbar part*/
-#navbar{
+#navbar {
+  .navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    padding: 15px 0;
-    background: $nav;
-    .navbar{
-        background:none !important;
-        .meCollapse{
-            .meUl{
-                display:flex;
-                align-items: center;
-                gap:35px;
-                .liItem{
-                    a.meA{
-                        color:$white !important;
-                        margin: 0;
-                        padding:0;
-                        &:hover{
-                            color:$deepRed !important;
-                        }
-                    }
-                }
-                .meLi{
-                    @include cmmnBtn;
-                    .meb{
-                        margin-left: 0 !important;
-                        color:$white;
-                    }
-                }
+    padding: 24px 0;
+    transition: 1s;
+    .meCollapse {
+      .meUl {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        .liItem {
+          a.meA {
+            color: $white !important;
+            margin: 0;
+            padding: 0;
+            &:hover {
+              color: $deepRed !important;
             }
+          }
         }
+        .meLi {
+          @include cmmnBtn;
+          .meb {
+            margin-left: 0 !important;
+            line-height: 0;
+            color: $white;
+          }
+        }
+      }
     }
+  }
+  .absolut {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: $nav;
+    z-index: 99;
+    padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
 }

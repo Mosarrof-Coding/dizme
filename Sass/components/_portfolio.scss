@@ -1,75 +1,100 @@
 @import "../variables/variable";
 @import "../mixins/mixin";
 /* portfolio part*/
-#portfolio{
-    padding:100px 0;
-    .portfolio_heading{
-        h4{
-            @include h4;
-        }
-        h2{
-            @include h2;
-        }
-        p{
-            color:$para;
-            @include paragraph;
-        }
-        .portfoliobutton{
-            margin:50px 0 0 10px;
-            ul{
-                padding: 0;
-                li{
-                    .masion{
-                        padding:3px 4px;
-                        margin:5px 5px;
-                        color:$white;
-                        &:hover{
-                            color:$deepRed;
-                        }
-                    }
-                }
-            }
-        }
+#portfolio {
+  padding: 100px 0;
+  .portfolio_heading {
+    h4 {
+      @include h4;
     }
-    .imgMain{
-        margin-top: 50px;
+    h2 {
+      @include h2;
+    }
+    p {
+      color: $para;
+      @include paragraph;
+    }
+    .portfoliobutton {
+      margin: 50px 0 0 10px;
+      ul {
+        padding: 0;
+        li {
+          .masion {
+            padding: 3px 4px;
+            margin: 5px 5px;
+            color: $white;
+            &:hover {
+              color: $deepRed;
+            }
+          }
+        }
+      }
+    }
+  }
+  .imgMain {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    .item {
+      max-width: 410px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .inner {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        gap:24px;
-        flex-wrap:wrap;
-        .item{
-            max-width:410px;
-            display: flex;
-            flex-direction:column;
-            gap:24px;
-            .inner{
-                width:100%;
-                .Imgfile{
-                    width: 100%;
-                    height:520px;
-                    border-radius:10px;
-                    overflow:hidden;
-                    img{
-                        width:100%;
-                        height:100%;
-                        object-fit:cover;
-                        transition: all linear .3s;
-                    }
-                    &:hover img{
-                        transform:scale(1.2)
-                    }
-                }
-                .exfile{
-                    height:290px;
-                }
-            }
-            .tile { 
-                display: none;
-            }
-            .All{
-                display: block;
-            }
+        display: block;
+        position: relative;
+        .Imgfile {
+          width: 100%;
+          height: 520px;
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all linear 0.3s;
+          }
+          &:hover img {
+            transform: scale(1.2);
+          }
         }
+        .exfile {
+          height: 290px;
+        }
+        .inner_title {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: grid;
+          place-items: center;
+          touch-action: none;
+          pointer-events: none;
+          z-index: 999;
+          transition: 0.3s;
+          div {
+            width: fit-content;
+            background-color: #fff;
+          }
+          :nth-child(1) {
+            padding: 4px 10px 0 10px;
+            border-radius: 5px 5px 0 0;
+          }
+          :nth-child(2) {
+            padding: 0px 10px 4px 10px;
+            border-radius: 0 5px 5px 5px;
+          }
+        }
+      }
+      .tile {
+        display: none;
+      }
+      .All {
+        display: block;
+      }
     }
+  }
 }

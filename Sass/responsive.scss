@@ -227,9 +227,9 @@
         }
         .service_item {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            padding: 20px 10px;
+            padding: 20px 30px !important;
             .servimg{
                 margin-bottom: 20px !important;
                 width: 60px;
@@ -240,7 +240,8 @@
             }
             .servdesign{
                 margin-left: 0;
-                text-align: center;
+                text-align: left !important;
+                width: 100% !important;
                 h3{
                     font-size: 20px;
                     margin-bottom: 5px;
@@ -1268,7 +1269,6 @@
 }
 // xl device-----------
 @media (min-width: 1200px) and (max-width: 1399.98px){
-
 }
 // xxl device-----------
 @media (min-width: 1400px){

@@ -204,9 +204,9 @@
   }
   #services .service_item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 20px 30px !important;
   }
   #services .service_item .servimg {
     margin-bottom: 20px !important;
@@ -218,7 +218,8 @@
   }
   #services .service_item .servdesign {
     margin-left: 0;
-    text-align: center;
+    text-align: left !important;
+    width: 100% !important;
   }
   #services .service_item .servdesign h3 {
     font-size: 20px;

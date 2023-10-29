@@ -1,4 +1,5 @@
-/* add all type scss*/ /* common scss start */
+/* add all type scss*/
+/* common scss start */
 * {
   margin: 0;
   padding: 0;
@@ -33,18 +34,19 @@ body {
 /* variabls end*/
 /* variabls start*/
 /* variabls end*/
-/* add all components*/ /* variabls start*/
+/* add all components*/
+/* variabls start*/
 /* variabls end*/
 /* variabls start*/
 /* variabls end*/
 /* navbar part*/
-#navbar {
-  width: 100%;
-  padding: 15px 0;
-  background: #2b2d33;
-}
 #navbar .navbar {
-  background: none !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 24px 0;
+  transition: 1s;
 }
 #navbar .navbar .meCollapse .meUl {
   display: flex;
@@ -89,7 +91,18 @@ body {
 }
 #navbar .navbar .meCollapse .meUl .meLi .meb {
   margin-left: 0 !important;
+  line-height: 0;
   color: #fff;
+}
+#navbar .absolut {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #2b2d33;
+  z-index: 99;
+  padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 /* variabls start*/
@@ -100,7 +113,9 @@ body {
 #banner {
   width: 100%;
   background: url(../images/dizmeBanner.jpg) no-repeat center/cover;
-  padding: 157px 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 #banner .diz_heading {
   width: 100%;
@@ -569,6 +584,8 @@ body {
 }
 #portfolio .imgMain .item .inner {
   width: 100%;
+  display: block;
+  position: relative;
 }
 #portfolio .imgMain .item .inner .Imgfile {
   width: 100%;
@@ -588,6 +605,30 @@ body {
 }
 #portfolio .imgMain .item .inner .exfile {
   height: 290px;
+}
+#portfolio .imgMain .item .inner .inner_title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  touch-action: none;
+  pointer-events: none;
+  z-index: 999;
+  transition: 0.3s;
+}
+#portfolio .imgMain .item .inner .inner_title div {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+}
+#portfolio .imgMain .item .inner .inner_title :nth-child(1) {
+  padding: 4px 10px 0 10px;
+  border-radius: 5px 5px 0 0;
+}
+#portfolio .imgMain .item .inner .inner_title :nth-child(2) {
+  padding: 0px 10px 4px 10px;
+  border-radius: 0 5px 5px 5px;
 }
 #portfolio .imgMain .item .tile {
   display: none;
@@ -1532,9 +1573,9 @@ footer .end span {
   }
   #services .service_item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 20px 30px !important;
   }
   #services .service_item .servimg {
     margin-bottom: 20px !important;
@@ -1546,7 +1587,8 @@ footer .end span {
   }
   #services .service_item .servdesign {
     margin-left: 0;
-    text-align: center;
+    text-align: left !important;
+    width: 100% !important;
   }
   #services .service_item .servdesign h3 {
     font-size: 20px;
