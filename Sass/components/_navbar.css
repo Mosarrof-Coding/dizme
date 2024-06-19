@@ -1,0 +1,69 @@
+/* variabls start*/
+/* variabls end*/
+/* variabls start*/
+/* variabls end*/
+/* navbar part*/
+#navbar .navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 24px 0;
+  transition: 1s;
+}
+#navbar .navbar .meCollapse .meUl {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+#navbar .navbar .meCollapse .meUl .liItem a.meA {
+  color: #fff !important;
+  margin: 0;
+  padding: 0;
+}
+#navbar .navbar .meCollapse .meUl .liItem a.meA:hover {
+  color: #f75023 !important;
+}
+#navbar .navbar .meCollapse .meUl .meLi {
+  z-index: 999;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #f75023;
+  border-radius: 50px;
+  padding: 5px 25px;
+  position: relative;
+  overflow: hidden;
+  max-height: 40px;
+}
+#navbar .navbar .meCollapse .meUl .meLi::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background: #f75023;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transition: all ease-out 0.3s;
+  height: 0;
+}
+#navbar .navbar .meCollapse .meUl .meLi:hover::before {
+  height: 100%;
+}
+#navbar .navbar .meCollapse .meUl .meLi:hover a {
+  color: #fff;
+}
+#navbar .navbar .meCollapse .meUl .meLi .meb {
+  margin-left: 0 !important;
+  line-height: 0;
+  color: #fff;
+}
+#navbar .absolut {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #2b2d33;
+  z-index: 99;
+  padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}/*# sourceMappingURL=_navbar.css.map */

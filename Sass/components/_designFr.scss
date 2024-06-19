@@ -1,111 +1,110 @@
 @import "../variables/variable";
 @import "../mixins/mixin";
 /*design part*/
-#designFr{
+#designFr {
+  width: 100%;
+  .designer {
     width: 100%;
-    .designer{
-        width: 100%;
-        display: block;
-        position: relative;
-        img{
-
-        }
-        .year{
-            display: flex;
-            align-items: center;
-            position: absolute;
-            right: 15%;
-            top: 10%;
-            padding:20px 25px;
-            border-radius:5px;
-            background:$bodylight;
-            .yera{
-                font-family:$jost;
-                text-transform: uppercase;
-                font-size:55px;
-                font-weight: 500;
-                letter-spacing:.03rem;
-                color:$green;
-                line-height: 1;
-                margin-right: 10px;
-            }
-            .experiance{
-                width: 100px;
-                letter-spacing:.03rem;
-                font-family:$jost;
-                font-size:18px;
-                font-weight:400;
-                color:$white;
-                line-height: 1.5;
-                text-align: center;
-            }
-        }
-        .project{
-            display: flex;
-            align-items: center;
-            position: absolute;
-            left: 0%;
-            bottom: 10%;
-            padding:20px 25px;
-            border-radius:5px;
-            background:$bodylight;
-            .nine{
-                letter-spacing:.03rem;
-                text-transform: uppercase;
-                font-size:55px;
-                font-weight: 500;
-                color:$green;
-                line-height: 1;
-                font-family:$jost;
-            }
-            .k{
-                letter-spacing:.03rem;
-                text-transform: uppercase;
-                font-size:55px;
-                font-weight: 500;
-                color:$green;
-                line-height: 1;
-                margin-right:10px;
-                font-family:$jost;
-                color:$yellow;
-            }
-            .done{
-                width: 55px;
-                letter-spacing:.03rem;
-                font-family:$jost;
-                font-size:18px;
-                font-weight:400;
-                color:$white;
-                line-height: 1.5;
-                text-align: center;
-            }
-        }
+    display: block;
+    position: relative;
+    img {
     }
-    .designe_caption{
-        position: relative;
-        margin-top:40px;
-        h4{
-            @include h4;
-        }
-        h2{
-            @include h2;
-        }
-        p{
-            color:$para;
-            @include paragraph;
-        }
-        .hire_button{
-            a{
-                color:$white;
-            }
-            @include cmnBtn1;
-        }
-        .tubRightlayer{
-            position: absolute;
-            right: -5%;
-            bottom: -5%;
-            display: block;
-            z-index: 5;
-        }
+    .year {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 15%;
+      top: 10%;
+      padding: 20px 25px;
+      border-radius: 5px;
+      background: $bodylight;
+      .yera {
+        font-family: $jost;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-weight: 500;
+        letter-spacing: 0.03rem;
+        color: $green;
+        line-height: 1;
+        margin-right: 10px;
+      }
+      .experiance {
+        width: 100px;
+        letter-spacing: 0.03rem;
+        font-family: $jost;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        line-height: 1.5;
+        text-align: center;
+      }
     }
+    .project {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0%;
+      bottom: 10%;
+      padding: 20px 25px;
+      border-radius: 5px;
+      background: $bodylight;
+      .nine {
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-weight: 500;
+        color: $green;
+        line-height: 1;
+        font-family: $jost;
+      }
+      .k {
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-weight: 500;
+        color: $green;
+        line-height: 1;
+        margin-right: 10px;
+        font-family: $jost;
+        color: $yellow;
+      }
+      .done {
+        width: 55px;
+        letter-spacing: 0.03rem;
+        font-family: $jost;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+  }
+  .designe_caption {
+    position: relative;
+    margin-top: 40px;
+    h4 {
+      @include h4;
+    }
+    h2 {
+      @include h2;
+    }
+    p {
+      color: $para;
+      @include paragraph;
+    }
+    .hire_button {
+      a {
+        color: $white;
+      }
+      @include cmnBtn1;
+    }
+    .tubRightlayer {
+      position: absolute;
+      right: -5%;
+      bottom: -5%;
+      display: block;
+      z-index: 5;
+    }
+  }
 }

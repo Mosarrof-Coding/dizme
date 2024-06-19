@@ -1,0 +1,170 @@
+/* variabls start*/
+/* variabls end*/
+/* variabls start*/
+/* variabls end*/
+/* contact part*/
+#contact {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+#contact .absolute23 {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  display: block;
+  width: 150px;
+}
+#contact .absolute23 img {
+  width: 100%;
+}
+#contact .contact_heading {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#contact .contact_heading h4 {
+  display: inline-block;
+  color: #f75023;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+  font-family: "Jost", sans-serif;
+  text-transform: capitalize;
+}
+#contact .contact_heading h2 {
+  font-size: 42px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  text-transform: capitalize;
+  font-family: "Jost", sans-serif;
+}
+#contact .contact_heading p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #b9b5c9;
+}
+#contact .via {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#contact .via .contact_icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: pink;
+  display: grid;
+  place-items: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+#contact .via .contact_icon i {
+  font-size: 20px;
+}
+#contact .via .address .pixel32 {
+  color: #fff !important;
+  font-size: 32px !important;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.3;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+#contact .via .address a {
+  color: #b9b5c9;
+  font-size: 16px;
+}
+#contact form {
+  width: 100%;
+  display: block;
+}
+#contact form label {
+  display: none;
+}
+#contact form .inpu_connect {
+  width: 100%;
+  display: block;
+}
+#contact form .inpu_connect .contactInput {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  margin-top: 0;
+  text-transform: capitalize;
+  border: 1px solid #555555;
+  background: none;
+}
+#contact form .inpu_connect .contactInput ::-moz-placeholder {
+  color: #b9b5c9;
+}
+#contact form .inpu_connect .contactInput ::placeholder {
+  color: #b9b5c9;
+}
+#contact form textarea {
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px solid #555555;
+  background: none;
+}
+#contact form textarea ::-moz-placeholder {
+  color: #b9b5c9;
+}
+#contact form textarea ::placeholder {
+  color: #b9b5c9;
+}
+#contact form .fvalid {
+  margin: 20px 0;
+  background: none;
+  text-transform: capitalize;
+  display: inline-block;
+  max-height: 45px;
+  padding: 7px 35px 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 2px solid #f75023;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin: 30px 0;
+  z-index: 20 !important;
+  font-size: "Jost", sans-serif;
+}
+#contact form .fvalid::before {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  background: #f75023;
+  transition: all ease-out 0.3s;
+}
+#contact form .fvalid:hover::before {
+  height: 0%;
+}
+#contact .map {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 100px 0;
+}
+#contact .map iframe {
+  display: block;
+  width: 100%;
+}/*# sourceMappingURL=_contact.css.map */
