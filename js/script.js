@@ -25,7 +25,7 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
   });
 });
 
@@ -108,3 +108,30 @@ innerS.forEach((inner, innIndex) => {
     });
   });
 });
+// Skill levels (in percentage)
+const skills = {
+  "illustrator-bar": 80,
+  "photoshop-bar": 90,
+  "figma-bar": 70,
+};
+
+function animateProgressBars() {
+  Object.keys(skills).forEach((id) => {
+    let progressBar = document.getElementById(id);
+    let targetWidth = skills[id];
+    let currentWidth = 0;
+
+    let interval = setInterval(() => {
+      if (currentWidth >= targetWidth) {
+        clearInterval(interval);
+      } else {
+        currentWidth++;
+        progressBar.style.width = currentWidth + "%";
+        progressBar.textContent = currentWidth + "%";
+      }
+    }, 15); // Speed of animation
+  });
+}
+
+// Run animation when the page loads
+document.addEventListener("DOMContentLoaded", animateProgressBars);
